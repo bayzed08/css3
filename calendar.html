@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calendar</title>
+    <style>
+        .calendar ul {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 10px;
+        }
+        
+        .calendar li {
+            list-style: none;
+            font-size: 42px;
+            height: 100px;
+            background-color: rgb(177, 184, 184);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .calendar .other-month {
+            background-color: bisque;
+            /* background-color: bisque !important; */
+        }
+    </style>
 </head>
 
 <body>
     <div class="calendar">
         <ul>
-            <li>30</li>
-            <li>31</li>
+            <li class="other-month">30</li>
+            <li class="other-month">31</li>
             <li>1</li>
             <li>2</li>
             <li>3</li>
@@ -42,9 +64,9 @@
             <li>28</li>
             <li>29</li>
             <li>30</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <li class="other-month">1</li>
+            <li class="other-month">2</li>
+            <li class="other-month">3</li>
 
         </ul>
     </div>
