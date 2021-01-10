@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes slidein {
+            0% {
+                left: 0;
+                top: 10px;
+                background-color: yellow;
+                transform: scale(.5);
+            }
+            50% {
+                left: 400px;
+                top: 110px;
+                background-color: red;
+                transform: scale(1.5);
+            }
+            100% {
+                left: 900px;
+                top: 10px;
+                background-color: yellow;
+                transform: scale(1);
+            }
+        }
+        
+        .stage:hover .ball {
+            animation: slidein 3s ease 1s infinite alternate;
+        }
+        
+        .stage {
+            height: 200px;
+            min-width: 800px;
+            background-color: antiquewhite;
+            border: 2px solid royalblue;
+        }
+        
+        .ball {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px soild red;
+            background-color: greenyellow;
+            position: absolute;
+            box-shadow: 10px 10px 20px yellowgreen;
+            text-align: centre;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball"><span>Sun</span></div>
+    </div>
+</body>
+
+</html>

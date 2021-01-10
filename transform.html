@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 2px solid salmon;
+        }
+        
+        .outer {
+            background-color: aqua;
+            overflow-y: hidden;
+        }
+        
+        .inner {
+            background-color: bisque;
+            transform: scale(.75) rotate(15deg) skew(5deg) translate(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is transform</h1>
+    <div class="box outer">
+        <div class="box inner">box-01</div>
+    </div>
+    <div class="box outer">
+        <div class="box inner">box-02</div>
+    </div>
+    <div class="box outer">
+        <div class="box inner">box-03</div>
+    </div>
+
+</body>
+
+</html>

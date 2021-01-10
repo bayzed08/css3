@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            height: 300px;
+            width: 400px;
+            background-color: antiquewhite;
+            border: 2px solid darkgray;
+            text-align: center;
+            /* transition: width 3s, color 5s ease, height 2s ease 2s; */
+        }
+        
+        .box:hover {
+            background-color: ;
+            height: 500px;
+            color: white;
+            width: 500px;
+        }
+        
+        .child-box {
+            color: brown;
+            transition: all 5s ease;
+        }
+        
+        .child-box:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1 class="child-box">Transition</h1>
+    </div>
+</body>
+
+</html>
